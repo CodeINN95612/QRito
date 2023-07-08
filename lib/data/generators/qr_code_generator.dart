@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-import 'package:qrito/data/models/qr_code.dart' as qr;
+
+import '../models/qr_code.dart';
 
 class QrCodeGenerator {
-  static CustomPaint generatePainter({required qr.QrCode qrCode}) {
+  static CustomPaint generatePainter({required QritoCode qrCode}) {
     return CustomPaint(
       size: qrCode.size,
       painter: QrPainter(
